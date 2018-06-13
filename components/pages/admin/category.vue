@@ -213,6 +213,19 @@ this.$iziToast.error({
 },
     addNewCategory()
     {
+      if(!this.newCategory.name)
+      {
+                 this.$iziToast.error({
+                            title: 'Error',
+                            message:"please input name",
+
+             });
+             var  catNameInput  =document.getElementById("newCatName");
+catNameInput.focus();
+       return;
+      }
+
+
 this.$eventBus.$emit("loadingStatus", true);
 
 this.$axios.post("http://localhost/www/vue-phpcrud/api.php?action=category",this.newCategory)
