@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Login from '@/components/pages/Login'
-import Admin from '@/components/pages/admin/admin'
+import Category from '@/components/pages/admin/category'
 
 
 
@@ -28,6 +28,14 @@ export default new Router({
       component: Admin,
       redirect: {path:"/admin/category"},
 
+      children:[
+        {
+          path: 'category',
+          name:'admin.category',
+          component: Category
+        },
+
+      ],
 
 
     },
