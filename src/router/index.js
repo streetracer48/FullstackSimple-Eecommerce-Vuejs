@@ -6,8 +6,6 @@ import Category from '@/components/pages/admin/category'
 import suppliers from  '@/components/pages/admin/supplier'
 import product from '@/components/pages/admin/product'
 
-
-
 Vue.use(Router)
 
 export default new Router({
