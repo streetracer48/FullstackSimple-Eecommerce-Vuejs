@@ -17,7 +17,7 @@
 <router-link to="/admin/product">Product</router-link>
 </li>
 <li>
-<router-link to="/admin/shop">Shop</router-link>
+<router-link to="/shop">Shop</router-link>
 </li>
 </ul>
 </div>
