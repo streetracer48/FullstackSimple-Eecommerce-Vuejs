@@ -8,6 +8,7 @@ import suppliers from  '@/components/pages/admin/supplier'
 import product from '@/components/pages/admin/product'
 import shop from '@/components/pages/shop/shop'
 import productshow from '@/components/pages/shop/productshow'
+import productcart from '@/components/pages/shop/product'
 
 
 
@@ -64,9 +65,20 @@ export default new Router({
         {
           path: 'products',
           name:'shop.productshow',
-
           component: productshow
         },
+
+        {
+          path: 'product/:pid',
+          name:'shop.product',
+          component: productcart
+        },
+
+        // {
+        //   path: 'product',
+        //   name:'admin.product',
+        //   component: product
+        // },
       ],
     },
 
